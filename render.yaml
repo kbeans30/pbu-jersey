@@ -98,3 +98,11 @@ services:
         sync: false
       - key: PRINTFUL_CHEST_PATCH_URL
         sync: false
+
+databases:
+  - name: pbu-db
+      plan: starter
+
+redis:
+  - name: pbu-redis
+      plan: starter
