@@ -101,8 +101,8 @@ services:
 
 databases:
   - name: pbu-db
-      plan: starter
+        plan: starter
 
 redis:
   - name: pbu-redis
-      plan: starter
+        plan: starter
