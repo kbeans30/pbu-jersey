@@ -99,10 +99,10 @@ services:
       - key: PRINTFUL_CHEST_PATCH_URL
         sync: false
 
+  - type: redis
+    name: pbu-redis
+    plan: starter
 databases:
   - name: pbu-db
     plan: starter
 
-redis:
-  - name: pbu-redis
-    plan: starter
