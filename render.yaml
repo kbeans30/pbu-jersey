@@ -1,4 +1,4 @@
-services:
+  services:
   - type: web
     name: pbu-web
     env: node
@@ -9,11 +9,6 @@ services:
     startCommand: cd apps/web && npm run start
     autoDeploy: true
     envVars:
-      - key: API_BASE_URL
-        fromService:
-          name: pbu-api
-          type: web
-          property: url
       - key: NEXT_PUBLIC_SUPABASE_URL
         sync: false
       - key: NEXT_PUBLIC_SUPABASE_ANON_KEY
@@ -103,6 +98,8 @@ services:
     name: pbu-redis
     plan: starter
 databases:
+  ipAllowList:
+      - source: services
   - name: pbu-db
-    plan: starter
+        plan: starter
 
