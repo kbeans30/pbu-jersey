@@ -100,9 +100,9 @@ services:
         sync: false
 
 databases:
-  -   name: pbu-db
-          plan: starter
+  - name: pbu-db
+    plan: starter
 
 redis:
-    - name: pbu-redis
-          plan: starter
+  - name: pbu-redis
+    plan: starter
