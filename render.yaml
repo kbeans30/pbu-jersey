@@ -1,4 +1,4 @@
-  services:
+services:
   - type: web
     name: pbu-web
     env: node
@@ -93,13 +93,12 @@
         sync: false
       - key: PRINTFUL_CHEST_PATCH_URL
         sync: false
-
   - type: redis
     name: pbu-redis
     plan: starter
-databases:
-  ipAllowList:
+    ipAllowList:
       - source: services
-  - name: pbu-db
-        plan: starter
 
+databases:
+  - name: pbu-db
+    plan: starter
