@@ -97,7 +97,8 @@ services:
     name: pbu-redis
     plan: starter
     ipAllowList:
-   - source: 0.0.0.0/0
+      - source: 0.0.0.0/0
+
 databases:
   - name: pbu-db
     plan: starter
